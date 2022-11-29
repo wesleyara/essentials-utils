@@ -1,13 +1,16 @@
 {
-  "name": "rctils",
+  "name": "utils-react",
   "version": "1.0.0",
   "description": "A React utils functions.",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
   "scripts": {
     "test": "vitest",
-    "build": "rimraf dist && tsc --declaration"
+    "build": "rimraf lib && tsc --declaration"
   },
+  "files": [
+    "lib/**/*"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/wesleyara/rctils.git"
