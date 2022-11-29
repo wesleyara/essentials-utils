@@ -13,3 +13,10 @@ export const navigateHandler = (targetUrl: string, inNewWindow: boolean) => {
     location.href = targetUrl;
   }
 };
+
+export const fetchRequest = async (url: string) => {
+  const response = await fetch(url);
+  const data = await response.json();
+
+  return data;
+};

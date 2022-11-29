@@ -67,6 +67,23 @@ navigateHandler("/home", true);
 // Navigate to /home in a new tab
 ```
 
+## fetchRequest
+
+Fetch data from an API.
+
+```js
+import { fetchRequest } from "utils-react";
+
+fetchRequest("https://api.github.com/users/wesleyara")
+  .then((response) => console.log(response))
+  .catch((error) => console.log(error));
+
+// or
+
+const response = await fetchRequest("https://api.github.com/users/wesleyara");
+console.log(response);
+```
+
 # :pencil: Contributing
 
 Your contribution to the `utils-react` is essential for the evolution of the project, you can do it as follows:
