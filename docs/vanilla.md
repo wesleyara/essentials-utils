@@ -103,12 +103,22 @@ arrayToObject(
 ); // { 1: { id: 1, name: "a" }, 2: { id: 2, name: "b" } }
 ```
 
-## removeArrayItem
+## removeArrayItemByValue
 
 Remove an item from an array.
 
 ```js
-import { removeArrayItem } from "utils-react";
+import { removeArrayItemByValue } from "utils-react";
 
-removeArrayItem([1, 2, 3], 2); // [1, 3]
+removeArrayItemByValue([1, 2, 3], 2); // [1, 3]
+```
+
+## removeArrayItemByIndex 
+
+Remove an item from an array by index.
+
+```js
+import { removeArrayItemByIndex } from "utils-react";
+
+removeArrayItemByIndex([1, 2, 3], 1); // [1, 3]
 ```

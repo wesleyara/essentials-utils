@@ -8,7 +8,8 @@ import {
   arrayToObject,
   generateArray,
   reverseString,
-  removeArrayItem,
+  removeArrayItemByValue,
+  removeArrayItemByIndex,
 } from "./index";
 
 describe("all methods in the package", () => {
@@ -61,6 +62,10 @@ describe("all methods in the package", () => {
   });
 
   it("remove an item from an array.", () => {
-    expect(removeArrayItem([1, 2, 3], 2)).toEqual([1, 3]);
+    expect(removeArrayItemByValue([1, 2, 3], 2)).toEqual([1, 3]);
+  });
+
+  it("remove an item from an array by index.", () => {
+    expect(removeArrayItemByIndex([1, 2, 3], 1)).toEqual([1, 3]);
   });
 });
