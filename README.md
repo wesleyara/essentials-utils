@@ -33,6 +33,8 @@ Answer the questions (When choosing the tool, use the arrows keys to navigate, t
 
 # 🛠️ Tools
 
+Example:
+
 ## upperFirst
 
 Capitalize the first letter of the string.
@@ -41,71 +43,6 @@ Capitalize the first letter of the string.
 import { upperFirst } from "utils-react";
 
 upperFirst("hello world"); // Hello world
-```
-
-## generateArray
-
-Generates an array of numbers.
-
-```js
-import { generateArray } from "utils-react";
-
-generateArray(10); // [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
-```
-
-## navigateHandler
-
-Navigate to a specific route.
-
-```js
-import { navigateHandler } from "utils-react";
-
-navigateHandler("/home", false);
-// Navigate to /home
-
-navigateHandler("/home", true);
-// Navigate to /home in a new tab
-```
-
-## fetchRequest
-
-Fetch data from an API.
-
-```js
-import { fetchRequest } from "utils-react";
-
-fetchRequest("https://api.github.com/users/wesleyara")
-  .then(response => console.log(response))
-  .catch(error => console.log(error));
-
-// or
-
-const response = await fetchRequest("https://api.github.com/users/wesleyara");
-console.log(response);
-```
-
-## delay
-
-Delay the execution of a function.
-
-```js
-import { delay } from "utils-react";
-
-delay(1000).then(() => console.log("Hello world"));
-
-// or
-
-await delay(1000);
-```
-
-## reverseString
-
-Reverse a string.
-
-```js
-import { reverseString } from "utils-react";
-
-reverseString("Hello world"); // dlrow olleH
 ```
 
 ## useDebounce
@@ -122,6 +59,8 @@ useEffect(() => {
   console.log(debouncedValue);
 }, [debouncedValue]);
 ```
+
+for more information, see the docs, [Vanilla](/docs/vanilla.md) and [React](/docs/react.md)
 
 # :pencil: Contributing
 
