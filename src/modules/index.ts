@@ -20,3 +20,7 @@ export const fetchRequest = async (url: string) => {
 
   return data;
 };
+
+export const delay = (milliseconds: number) => {
+  return new Promise(resolve => setTimeout(resolve, milliseconds));
+};

@@ -84,6 +84,20 @@ const response = await fetchRequest("https://api.github.com/users/wesleyara");
 console.log(response);
 ```
 
+## delay
+
+Delay the execution of a function.
+
+```js
+import { delay } from "utils-react";
+
+delay(1000).then(() => console.log("Hello world"));
+
+// or
+
+await delay(1000);
+```
+
 # :pencil: Contributing
 
 Your contribution to the `utils-react` is essential for the evolution of the project, you can do it as follows:
