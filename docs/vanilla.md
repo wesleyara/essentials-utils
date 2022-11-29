@@ -94,12 +94,11 @@ Convert an array to an object.
 ```js
 import { arrayToObject } from "utils-react";
 
-
 arrayToObject(
   [
     { id: 1, name: "a" },
     { id: 2, name: "b" },
   ],
   "id",
-) // { 1: { id: 1, name: "a" }, 2: { id: 2, name: "b" } }
+); // { 1: { id: 1, name: "a" }, 2: { id: 2, name: "b" } }
 ```
