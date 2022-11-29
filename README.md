@@ -33,12 +33,22 @@ Answer the questions (When choosing the tool, use the arrows keys to navigate, t
 
 # 🛠️ Tools
 
-### upperFirst
-  
+## upperFirst
+
+Capitalize the first letter of the string.
 ```js
 import { upperFirst } from 'utils-react'
 
 upperFirst('hello world') // Hello world
+```
+---
+## generateArray
+
+Generates an array of numbers.
+```js
+import { generateArray } from 'utils-react'
+
+generateArray(10) // [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
 ```
 
 # :pencil: Contributing
