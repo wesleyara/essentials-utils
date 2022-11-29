@@ -36,31 +36,34 @@ Answer the questions (When choosing the tool, use the arrows keys to navigate, t
 ## upperFirst
 
 Capitalize the first letter of the string.
-```js
-import { upperFirst } from 'utils-react'
 
-upperFirst('hello world') // Hello world
+```js
+import { upperFirst } from "utils-react";
+
+upperFirst("hello world"); // Hello world
 ```
 
 ## generateArray
 
 Generates an array of numbers.
-```js
-import { generateArray } from 'utils-react'
 
-generateArray(10) // [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+```js
+import { generateArray } from "utils-react";
+
+generateArray(10); // [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
 ```
 
 ## navigateHandler
 
 Navigate to a specific route.
-```js
-import { navigateHandler } from 'utils-react'
 
-navigateHandler('/home', false) 
+```js
+import { navigateHandler } from "utils-react";
+
+navigateHandler("/home", false);
 // Navigate to /home
 
-navigateHandler('/home', true) 
+navigateHandler("/home", true);
 // Navigate to /home in a new tab
 ```
 
@@ -72,7 +75,6 @@ Your contribution to the `utils-react` is essential for the evolution of the pro
 - Open a [pull request](https://github.com/wesleyara/utils-react/pulls) to give ideas for code improvement, implementation of new features and bug fixes
 
 These are just some of the ways you can contribute to the project read the [CONTRIBUTING](https://github.com/wesleyara/utils-react/blob/main/.github/CONTRIBUTING.md) for more information
-
 
 # :adult: Authors
 
