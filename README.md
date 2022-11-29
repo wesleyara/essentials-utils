@@ -98,6 +98,17 @@ delay(1000).then(() => console.log("Hello world"));
 await delay(1000);
 ```
 
+## reverseString
+
+Reverse a string.
+
+```js
+import { reverseString } from "utils-react";
+
+reverseString("Hello world"); // dlrow olleH
+```
+
+
 # :pencil: Contributing
 
 Your contribution to the `utils-react` is essential for the evolution of the project, you can do it as follows:

@@ -24,3 +24,7 @@ export const fetchRequest = async (url: string) => {
 export const delay = (milliseconds: number) => {
   return new Promise(resolve => setTimeout(resolve, milliseconds));
 };
+
+export function reverseString(str: string) {
+  return str.split("").reverse().join("");
+}
