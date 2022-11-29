@@ -8,6 +8,7 @@ import {
   arrayToObject,
   generateArray,
   reverseString,
+  removeArrayItem,
 } from "./index";
 
 describe("all methods in the package", () => {
@@ -57,5 +58,9 @@ describe("all methods in the package", () => {
 
   it("reverse a string.", () => {
     expect(reverseString("foo")).toBe("oof");
+  });
+
+  it("remove an item from an array.", () => {
+    expect(removeArrayItem([1, 2, 3], 2)).toEqual([1, 3]);
   });
 });

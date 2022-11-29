@@ -46,3 +46,12 @@ export const arrayToObject = (array: any[], key: string) => {
     return obj;
   }, {});
 };
+
+export const removeArrayItem = (array: any[], item: any) => {
+  const index = array.indexOf(item);
+  if (index > -1) {
+    array.splice(index, 1);
+  }
+
+  return array;
+};
