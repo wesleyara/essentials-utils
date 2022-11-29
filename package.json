@@ -6,6 +6,7 @@
   "types": "lib/index.d.ts",
   "scripts": {
     "test": "vitest",
+    "test:run": "vitest run",
     "dev": "ts-node src/index.ts",
     "build": "rimraf lib && tsc --declaration",
     "format": "prettier --check .",
