@@ -52,5 +52,3 @@ import { useScroll } from "utils-react";
 const scroll = useScroll();
 console.log(scroll);
 ```
-
-
