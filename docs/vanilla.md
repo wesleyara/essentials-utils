@@ -132,3 +132,14 @@ import { objectToArray } from "utils-react";
 
 objectToArray({ a: 1, b: 2 }); // [{ a: 1 }, { b: 2 }]
 ```
+
+## currentRouter
+
+Get the current route.
+
+```js
+import { currentRouter } from "utils-react";
+
+const router = currentRouter();
+console.log(router.pathname); // /home
+```

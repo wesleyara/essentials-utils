@@ -67,3 +67,27 @@ export const removeArrayItemByIndex = (array: any[], index: number) => {
 export const objectToArray = (obj: any) => {
   return Object.keys(obj).map(key => obj[key]);
 };
+
+export const currentRouter = () => {
+  const url = window.location.href;
+  const pathname = window.location.pathname;
+  const hash = window.location.hash;
+  const query = window.location.search;
+  const protocol = window.location.protocol;
+  const host = window.location.host;
+  const hostname = window.location.hostname;
+  const port = window.location.port;
+
+  const urlObject = {
+    url,
+    pathname,
+    hash,
+    query,
+    protocol,
+    host,
+    hostname,
+    port,
+  };
+
+  return urlObject;
+};
