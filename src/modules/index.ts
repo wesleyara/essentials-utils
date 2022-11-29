@@ -25,6 +25,6 @@ export const delay = (milliseconds: number) => {
   return new Promise(resolve => setTimeout(resolve, milliseconds));
 };
 
-export function reverseString(str: string) {
+export const reverseString = (str: string) => {
   return str.split("").reverse().join("");
-}
+};
