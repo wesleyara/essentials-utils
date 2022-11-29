@@ -86,3 +86,20 @@ import { arrayEquals } from "utils-react";
 
 arrayEquals([1, 2, 3], [1, 2, 3]); // true
 ```
+
+## arrayToObject
+
+Convert an array to an object.
+
+```js
+import { arrayToObject } from "utils-react";
+
+
+arrayToObject(
+  [
+    { id: 1, name: "a" },
+    { id: 2, name: "b" },
+  ],
+  "id",
+) // { 1: { id: 1, name: "a" }, 2: { id: 2, name: "b" } }
+```
