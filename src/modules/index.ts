@@ -63,3 +63,7 @@ export const removeArrayItemByIndex = (array: any[], index: number) => {
 
   return array;
 };
+
+export const objectToArray = (obj: any) => {
+  return Object.keys(obj).map(key => obj[key]);
+};

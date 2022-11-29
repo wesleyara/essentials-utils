@@ -10,6 +10,7 @@ import {
   reverseString,
   removeArrayItemByValue,
   removeArrayItemByIndex,
+  objectToArray,
 } from "./index";
 
 describe("all methods in the package", () => {
@@ -67,5 +68,17 @@ describe("all methods in the package", () => {
 
   it("remove an item from an array by index.", () => {
     expect(removeArrayItemByIndex([1, 2, 3], 1)).toEqual([1, 3]);
+  });
+
+  it("convert an object to an array.", () => {
+    expect(
+      objectToArray({
+        1: { id: 1, name: "a" },
+        2: { id: 2, name: "b" },
+      }),
+    ).toEqual([
+      { id: 1, name: "a" },
+      { id: 2, name: "b" },
+    ]);
   });
 });

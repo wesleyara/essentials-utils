@@ -122,3 +122,13 @@ import { removeArrayItemByIndex } from "utils-react";
 
 removeArrayItemByIndex([1, 2, 3], 1); // [1, 3]
 ```
+
+## objectToArray
+
+Convert an object to an array.
+
+```js
+import { objectToArray } from "utils-react";
+
+objectToArray({ a: 1, b: 2 }); // [{ a: 1 }, { b: 2 }]
+```
