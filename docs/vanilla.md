@@ -102,3 +102,44 @@ arrayToObject(
   "id",
 ); // { 1: { id: 1, name: "a" }, 2: { id: 2, name: "b" } }
 ```
+
+## removeArrayItemByValue
+
+Remove an item from an array.
+
+```js
+import { removeArrayItemByValue } from "utils-react";
+
+removeArrayItemByValue([1, 2, 3], 2); // [1, 3]
+```
+
+## removeArrayItemByIndex
+
+Remove an item from an array by index.
+
+```js
+import { removeArrayItemByIndex } from "utils-react";
+
+removeArrayItemByIndex([1, 2, 3], 1); // [1, 3]
+```
+
+## objectToArray
+
+Convert an object to an array.
+
+```js
+import { objectToArray } from "utils-react";
+
+objectToArray({ a: 1, b: 2 }); // [{ a: 1 }, { b: 2 }]
+```
+
+## currentRouter
+
+Get the current route.
+
+```js
+import { currentRouter } from "utils-react";
+
+const router = currentRouter();
+console.log(router.pathname); // /home
+```

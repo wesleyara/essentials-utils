@@ -46,3 +46,48 @@ export const arrayToObject = (array: any[], key: string) => {
     return obj;
   }, {});
 };
+
+export const removeArrayItemByValue = (array: any[], value: any) => {
+  const index = array.indexOf(value);
+  if (index > -1) {
+    array.splice(index, 1);
+  }
+
+  return array;
+};
+
+export const removeArrayItemByIndex = (array: any[], index: number) => {
+  if (index > -1) {
+    array.splice(index, 1);
+  }
+
+  return array;
+};
+
+export const objectToArray = (obj: any) => {
+  return Object.keys(obj).map(key => obj[key]);
+};
+
+export const currentRouter = () => {
+  const url = window.location.href;
+  const pathname = window.location.pathname;
+  const hash = window.location.hash;
+  const query = window.location.search;
+  const protocol = window.location.protocol;
+  const host = window.location.host;
+  const hostname = window.location.hostname;
+  const port = window.location.port;
+
+  const urlObject = {
+    url,
+    pathname,
+    hash,
+    query,
+    protocol,
+    host,
+    hostname,
+    port,
+  };
+
+  return urlObject;
+};

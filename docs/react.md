@@ -16,3 +16,39 @@ useEffect(() => {
   console.log(debouncedValue);
 }, [debouncedValue]);
 ```
+
+## useWidth
+
+Get the width of the window.
+
+```js
+import { useWidth } from "utils-react";
+
+// called in a component
+const width = useWidth();
+console.log(width);
+```
+
+## useHeight
+
+Get the height of the window.
+
+```js
+import { useHeight } from "utils-react";
+
+// called in a component
+const height = useHeight();
+console.log(height);
+```
+
+## useScroll
+
+Get the scroll position of the window.
+
+```js
+import { useScroll } from "utils-react";
+
+// called in a component
+const scroll = useScroll();
+console.log(scroll);
+```
