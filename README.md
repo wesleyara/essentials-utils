@@ -41,7 +41,7 @@ import { upperFirst } from 'utils-react'
 
 upperFirst('hello world') // Hello world
 ```
----
+
 ## generateArray
 
 Generates an array of numbers.
