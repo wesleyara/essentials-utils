@@ -51,6 +51,19 @@ import { generateArray } from 'utils-react'
 generateArray(10) // [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
 ```
 
+## navigateHandler
+
+Navigate to a specific route.
+```js
+import { navigateHandler } from 'utils-react'
+
+navigateHandler('/home', false) 
+// Navigate to /home
+
+navigateHandler('/home', true) 
+// Navigate to /home in a new tab
+```
+
 # :pencil: Contributing
 
 Your contribution to the `utils-react` is essential for the evolution of the project, you can do it as follows:
