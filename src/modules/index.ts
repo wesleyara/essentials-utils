@@ -1,3 +1,5 @@
+import axios from "axios";
+
 export const upperFirst = (str: string) => {
   return str.charAt(0).toUpperCase() + str.slice(1);
 };
@@ -15,8 +17,8 @@ export const navigateHandler = (targetUrl: string, inNewWindow: boolean) => {
 };
 
 export const fetchRequest = async (url: string) => {
-  const response = await fetch(url);
-  const data = await response.json();
+  const response = await axios.get(url);
+  const data = await response.data;
 
   return data;
 };
