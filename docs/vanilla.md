@@ -113,7 +113,7 @@ import { removeArrayItemByValue } from "utils-react";
 removeArrayItemByValue([1, 2, 3], 2); // [1, 3]
 ```
 
-## removeArrayItemByIndex 
+## removeArrayItemByIndex
 
 Remove an item from an array by index.
 
