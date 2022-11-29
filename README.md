@@ -75,8 +75,8 @@ Fetch data from an API.
 import { fetchRequest } from "utils-react";
 
 fetchRequest("https://api.github.com/users/wesleyara")
-  .then((response) => console.log(response))
-  .catch((error) => console.log(error));
+  .then(response => console.log(response))
+  .catch(error => console.log(error));
 
 // or
 
