@@ -108,6 +108,20 @@ import { reverseString } from "utils-react";
 reverseString("Hello world"); // dlrow olleH
 ```
 
+## useDebounce
+
+Debounce hook is used to minimize backend requests on inputs.
+
+```js
+import { useDebounce } from "utils-react";
+
+const [value, setValue] = useState("");
+const debouncedValue = useDebounce(value, 1000);
+
+useEffect(() => {
+  console.log(debouncedValue);
+}, [debouncedValue]);
+```
 
 # :pencil: Contributing
 
@@ -143,3 +157,7 @@ This project follows the [all-contributors](https://github.com/all-contributors/
 # :page_facing_up: License
 
 Vite helper is a open source project licensed as [MIT](LICENSE).
+
+```
+
+```
