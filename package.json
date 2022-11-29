@@ -6,6 +6,7 @@
   "types": "lib/index.d.ts",
   "scripts": {
     "test": "vitest",
+    "dev": "ts-node src/index.ts",
     "build": "rimraf lib && tsc --declaration",
     "format": "prettier --check .",
     "format:fix": "prettier --write .",
@@ -40,13 +41,13 @@
   },
   "homepage": "https://github.com/wesleyara/rctils#readme",
   "dependencies": {
-    "@types/react": "^18.0.25",
     "react": "^18.2.0",
     "rimraf": "^3.0.2"
   },
   "devDependencies": {
     "@commitlint/cli": "^17.3.0",
     "@commitlint/config-conventional": "^17.1.0",
+    "@types/react": "^18.0.25",
     "@types/node": "^18.11.9",
     "@typescript-eslint/eslint-plugin": "^5.45.0",
     "@typescript-eslint/parser": "^5.45.0",
