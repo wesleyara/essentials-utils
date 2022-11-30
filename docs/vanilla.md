@@ -143,3 +143,13 @@ import { currentRouter } from "utils-react";
 const router = currentRouter();
 console.log(router.pathname); // /home
 ```
+
+## smartLog
+
+Log a message in the console.
+
+```js
+import { smartLog } from "utils-react";
+
+smartLog("Hello world"); // [DEBUB] - Hello world
+```

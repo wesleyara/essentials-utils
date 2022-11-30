@@ -11,7 +11,7 @@ import {
   removeArrayItemByValue,
   removeArrayItemByIndex,
   objectToArray,
-} from "./index";
+} from "../index";
 
 describe("all methods in the package", () => {
   it("capitalize the first letter of the string.", () => {

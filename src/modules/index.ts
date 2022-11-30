@@ -91,3 +91,7 @@ export const currentRouter = () => {
 
   return urlObject;
 };
+
+export const smartLog = (value: any, label?: string) => {
+  return console.log(label ? `${label} -` : "[DEBUG] -", value);
+};
