@@ -92,6 +92,15 @@ export const currentRouter = () => {
   return urlObject;
 };
 
-export const smartLog = (value: any, label?: string) => {
-  return console.log(label ? `${label} -` : "[DEBUG] -", value);
+export const smartLog = (
+  value: any,
+  currentFunction: Function,
+  label?: string,
+) => {
+  return console.log(
+    `%c[${currentFunction.name}] -`,
+    "color: red",
+    label ? `${label}:` : "DEBUG:",
+    value,
+  );
 };

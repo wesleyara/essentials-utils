@@ -151,5 +151,7 @@ Log a message in the console.
 ```js
 import { smartLog } from "utils-react";
 
-smartLog("Hello world"); // [DEBUB] - Hello world
+const App = () => {
+  smartLog("Hello world", App); // [App] - DEBUG: Hello world
+};
 ```

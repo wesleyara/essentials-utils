@@ -21,6 +21,7 @@
     "no-console": "off",
     "import/extensions": "off",
     "import/no-unresolved": "off",
+    "@typescript-eslint/ban-types": "off",
     "no-unused-vars": [
       "error",
       {
