@@ -95,7 +95,7 @@ This project follows the [all-contributors](https://github.com/all-contributors/
 
 # :page_facing_up: License
 
-Vite helper is a open source project licensed as [MIT](LICENSE).
+utils-react is a open source project licensed as [MIT](LICENSE).
 
 ```
 
