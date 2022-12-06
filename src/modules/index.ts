@@ -104,3 +104,7 @@ export const smartLog = (
     value,
   );
 };
+
+export function isEmptyObject(obj: any) {
+  return JSON.stringify(obj) === "{}";
+}

@@ -155,3 +155,13 @@ const App = () => {
   smartLog("Hello world", App); // [App] - DEBUG: Hello world
 };
 ```
+
+## isEmptyObject
+
+Check if an object is empty.
+
+```js
+import { isEmptyObject } from "utils-react";
+
+isEmptyObject({}); // true
+```

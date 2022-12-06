@@ -11,6 +11,7 @@ import {
   removeArrayItemByValue,
   removeArrayItemByIndex,
   objectToArray,
+  isEmptyObject,
 } from "../index";
 
 describe("all methods in the package", () => {
@@ -80,5 +81,9 @@ describe("all methods in the package", () => {
       { id: 1, name: "a" },
       { id: 2, name: "b" },
     ]);
+  });
+
+  it("check if an object is empty.", () => {
+    expect(isEmptyObject({})).toBe(true);
   });
 });
