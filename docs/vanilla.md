@@ -165,3 +165,15 @@ import { isEmptyObject } from "utils-react";
 
 isEmptyObject({}); // true
 ```
+## shuffleArray
+
+random array method
+
+```js
+import {shuffleArray} from "utils-react";
+
+// called in a component
+const arr1 = [1,2,3,4,5];
+const arr2 = shuffleArray(arr1);
+console.log("arr2", arr2);
+```

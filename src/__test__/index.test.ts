@@ -88,6 +88,8 @@ describe("all methods in the package", () => {
     expect(isEmptyObject({})).toBe(true);
   });
   it("Randomly sorting arrays.", () => {
-    expect(shuffleArray([1, 2, 3]));
+    const arr1 = [1, 2, 3, 4, 5];
+    const arr2 = shuffleArray(arr1);
+    expect(arr1.some(item => arr2.includes(item))).toBe(true);
   });
 });
