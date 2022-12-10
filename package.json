@@ -1,6 +1,6 @@
 {
   "name": "utils-react",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A React utils functions.",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
