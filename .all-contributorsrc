@@ -1,0 +1,33 @@
+{
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": false,
+  "contributors": [
+    {
+      "login": "wesleyara",
+      "name": "Wesley Araújo",
+      "avatar_url": "https://avatars.githubusercontent.com/u/89321125?v=4",
+      "profile": "https://wesleyaraujo.dev/",
+      "contributions": [
+        "author"
+      ]
+    },
+    {
+      "login": "Patryck-Silva",
+      "name": "Patryck Silva",
+      "avatar_url": "https://avatars.githubusercontent.com/u/41785386?v=4",
+      "profile": "https://github.com/Patryck-Silva",
+      "contributions": [
+        "features"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7,
+  "projectName": "utils-react",
+  "projectOwner": "utils-react",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "skipCi": true
+}
