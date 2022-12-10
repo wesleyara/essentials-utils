@@ -12,6 +12,7 @@ import {
   removeArrayItemByIndex,
   objectToArray,
   isEmptyObject,
+  shuffleArray,
 } from "../index";
 
 describe("all methods in the package", () => {
@@ -85,5 +86,10 @@ describe("all methods in the package", () => {
 
   it("check if an object is empty.", () => {
     expect(isEmptyObject({})).toBe(true);
+  });
+  it("Randomly sorting arrays.", () => {
+    const arr1 = [1, 2, 3, 4, 5];
+    const arr2 = shuffleArray(arr1);
+    expect(arr1.some(item => arr2.includes(item))).toBe(true);
   });
 });
