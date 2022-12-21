@@ -170,10 +170,20 @@ isEmptyObject({}); // true
 random array method
 
 ```js
-import {shuffleArray} from "utils-react";
+import { shuffleArray } from "utils-react";
 
 // called in a component
 const arr1 = [1,2,3,4,5];
 const arr2 = shuffleArray(arr1);
 console.log("arr2", arr2);
+```
+
+## generateRandomNumber
+
+Generate a random number.
+
+```js
+import { generateRandomNumber } from "utils-react";
+
+generateRandomNumber(1, 10); // 5
 ```
