@@ -13,6 +13,7 @@ import {
   objectToArray,
   isEmptyObject,
   shuffleArray,
+  generateRandomNumber,
 } from "../index";
 
 describe("all methods in the package", () => {
@@ -87,9 +88,15 @@ describe("all methods in the package", () => {
   it("check if an object is empty.", () => {
     expect(isEmptyObject({})).toBe(true);
   });
-  it("Randomly sorting arrays.", () => {
+
+  it("randomly sorting arrays.", () => {
     const arr1 = [1, 2, 3, 4, 5];
     const arr2 = shuffleArray(arr1);
     expect(arr1.some(item => arr2.includes(item))).toBe(true);
+  });
+
+  it("generate a random number.", () => {
+    expect(generateRandomNumber(1, 10)).toBeGreaterThanOrEqual(1);
+    expect(generateRandomNumber(1, 10)).toBeLessThanOrEqual(10);
   });
 });
