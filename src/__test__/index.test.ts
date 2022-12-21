@@ -14,6 +14,7 @@ import {
   isEmptyObject,
   shuffleArray,
   generateRandomNumber,
+  getPercentage,
 } from "../index";
 
 describe("all methods in the package", () => {
@@ -98,5 +99,9 @@ describe("all methods in the package", () => {
   it("generate a random number.", () => {
     expect(generateRandomNumber(1, 10)).toBeGreaterThanOrEqual(1);
     expect(generateRandomNumber(1, 10)).toBeLessThanOrEqual(10);
+  });
+
+  it("get the percentage of a number.", () => {
+    expect(getPercentage(10, 100)).toBe(10);
   });
 });

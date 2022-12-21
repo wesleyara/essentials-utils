@@ -188,3 +188,13 @@ import { generateRandomNumber } from "utils-react";
 
 generateRandomNumber(1, 10); // 5
 ```
+
+## getPercentage
+
+Get the percentage of a number.
+
+```js
+import { getPercentage } from "utils-react";
+
+getPercentage(10, 100); // 10
+```
