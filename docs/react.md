@@ -52,3 +52,15 @@ import { useScroll } from "utils-react";
 const scroll = useScroll();
 console.log(scroll);
 ```
+
+## useNow
+
+Get the current time.
+
+```js
+import { useNow } from "utils-react";
+
+// called in a component
+const now = useNow();
+console.log(now);
+```
