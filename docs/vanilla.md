@@ -198,3 +198,14 @@ import { getPercentage } from "utils-react";
 
 getPercentage(10, 100); // 10
 ```
+
+## deepClone
+
+Clone an item.
+
+```js
+import { deepClone } from "utils-react";
+
+const obj = { a: 1, b: 2 };
+const obj2 = deepClone(obj); // { a: 1, b: 2 }
+```

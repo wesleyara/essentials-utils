@@ -126,3 +126,9 @@ export const generateRandomNumber = (min: number, max: number) => {
 export const getPercentage = (currentAmount: number, maxAmount: number) => {
   return (currentAmount / maxAmount) * 100;
 };
+
+export const deepClone = (item: any) => {
+  const clone = JSON.parse(JSON.stringify(item));
+
+  return clone;
+};
