@@ -132,3 +132,7 @@ export const deepClone = (item: any) => {
 
   return clone;
 };
+
+export const arrayLastItem = (array: any[]) => {
+  return array[array.length - 1];
+};

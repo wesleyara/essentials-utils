@@ -9,17 +9,17 @@
     "test:run": "vitest run",
     "dev": "ts-node src/index.ts",
     "build": "rimraf lib && tsc --declaration",
-    "format": "prettier --check .",
-    "format:fix": "prettier --write .",
-    "lint": "eslint --ext js,ts .",
-    "lint:fix": "eslint --ext js,ts . --fix",
+    "format": "prettier --check src",
+    "format:fix": "prettier --write src",
+    "lint": "eslint --ext js,ts src",
+    "lint:fix": "eslint --ext js,ts src --fix",
     "prepare": "husky install",
     "postversion": "git push && git push --tags && rm -rf build/temp"
   },
   "lint-staged": {
     "src/**/*.{js,ts,jsx,tsx}": [
-      "prettier --write .",
-      "eslint --ext js,ts . --fix"
+      "prettier --write src",
+      "eslint --ext js,ts src --fix"
     ]
   },
   "files": [

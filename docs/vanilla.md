@@ -209,3 +209,13 @@ import { deepClone } from "utils-react";
 const obj = { a: 1, b: 2 };
 const obj2 = deepClone(obj); // { a: 1, b: 2 }
 ```
+
+## arrayLastItem
+
+Get the last item of an array.
+
+```js
+import { arrayLastItem } from "utils-react";
+
+arrayLastItem([1, 2, 3]); // 3
+```
