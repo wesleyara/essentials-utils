@@ -15,6 +15,7 @@ import {
   shuffleArray,
   generateRandomNumber,
   getPercentage,
+  arrayLastItem,
 } from "../index";
 
 describe("all methods in the package", () => {
@@ -103,5 +104,9 @@ describe("all methods in the package", () => {
 
   it("get the percentage of a number.", () => {
     expect(getPercentage(10, 100)).toBe(10);
+  });
+
+  it("get the last item of an array.", () => {
+    expect(arrayLastItem([1, 2, 3])).toBe(3);
   });
 });

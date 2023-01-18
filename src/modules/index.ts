@@ -126,3 +126,7 @@ export const generateRandomNumber = (min: number, max: number) => {
 export const getPercentage = (currentAmount: number, maxAmount: number) => {
   return (currentAmount / maxAmount) * 100;
 };
+
+export const arrayLastItem = (array: any[]) => {
+  return array[array.length - 1];
+};

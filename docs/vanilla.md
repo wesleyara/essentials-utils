@@ -198,3 +198,13 @@ import { getPercentage } from "utils-react";
 
 getPercentage(10, 100); // 10
 ```
+
+## arrayLastItem
+
+Get the last item of an array.
+
+```js
+import { arrayLastItem } from "utils-react";
+
+arrayLastItem([1, 2, 3]); // 3
+```
