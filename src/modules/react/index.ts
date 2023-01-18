@@ -17,7 +17,7 @@ export const useDebounce = (value: any, delay: number) => {
 };
 
 export const useWidth = () => {
-  const [width, setWidth] = useState(0);
+  const [width, setWidth] = useState(window.innerWidth);
 
   const handleResize = () => setWidth(window.innerWidth);
 
@@ -31,7 +31,7 @@ export const useWidth = () => {
 };
 
 export const useHeight = () => {
-  const [height, setHeight] = useState(0);
+  const [height, setHeight] = useState(window.innerHeight);
 
   const handleResize = () => setHeight(window.innerHeight);
 
