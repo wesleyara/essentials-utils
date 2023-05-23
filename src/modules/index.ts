@@ -32,12 +32,17 @@ export const reverseString = (str: string) => {
 };
 
 export const arrayEquals = (a: any[], b: any[]) => {
-  return (
-    Array.isArray(a) &&
-    Array.isArray(b) &&
-    a.length === b.length &&
-    a.every((val, index) => val === b[index])
-  );
+  if (!Array.isArray(a) || !Array.isArray(b) || a.length !== b.length) {
+    return false;
+  }
+
+  for (let i = 0; i < a.length; i++) {
+    if (a[i] !== b[i]) {
+      return false;
+    }
+  }
+
+  return true;
 };
 
 export const arrayToObject = (array: any[], key: string) => {
