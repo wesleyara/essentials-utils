@@ -163,3 +163,18 @@ export const getStorage = (key: string) => {
 export const removeStorage = (key: string) => {
   localStorage.removeItem(key);
 };
+
+export const generateRandomString = (length: number) => {
+  const charactersWithSymbols =
+    "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*()_+";
+  let result = "";
+  const charactersLength = charactersWithSymbols.length;
+
+  for (let i = 0; i < length; i++) {
+    result += charactersWithSymbols.charAt(
+      Math.floor(Math.random() * charactersLength),
+    );
+  }
+
+  return result;
+};

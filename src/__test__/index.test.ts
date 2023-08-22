@@ -17,6 +17,7 @@ import {
   getPercentage,
   arrayLastItem,
   generateNullArray,
+  generateRandomString,
 } from "../index";
 
 describe("all methods in the package", () => {
@@ -111,5 +112,9 @@ describe("all methods in the package", () => {
 
   it("generate a null array", () => {
     expect(generateNullArray(3)).toEqual([null, null, null]);
+  });
+
+  it("generate a random string", () => {
+    expect(generateRandomString(10)).toBeTypeOf("string");
   });
 });
