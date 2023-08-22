@@ -141,3 +141,11 @@ export const deepClone = (item: any) => {
 export const arrayLastItem = (array: any[]) => {
   return array[array.length - 1];
 };
+
+export const generateNullArray = (quantity: number) => {
+  const arr: any = [];
+  for (let i = 0; i < quantity; i++) {
+    arr.push(null);
+  }
+  return arr;
+};
