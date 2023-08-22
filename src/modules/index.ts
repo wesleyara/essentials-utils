@@ -159,3 +159,7 @@ export const getStorage = (key: string) => {
 
   return data ? JSON.parse(data) : undefined;
 };
+
+export const removeStorage = (key: string) => {
+  localStorage.removeItem(key);
+};
