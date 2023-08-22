@@ -16,7 +16,7 @@ export const navigateHandler = (targetUrl: string, inNewWindow: boolean) => {
   }
 };
 
-export const fetchRequest = async (url: string) => {
+export const fetcher = async (url: string) => {
   const response = await axios.get(url);
   const data = await response.data;
 

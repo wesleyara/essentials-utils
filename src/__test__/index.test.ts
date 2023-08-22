@@ -2,7 +2,7 @@ import { describe, expect, it } from "vitest";
 
 import {
   upperFirst,
-  fetchRequest,
+  fetcher,
   delay,
   arrayEquals,
   arrayToObject,
@@ -25,9 +25,7 @@ describe("all methods in the package", () => {
   });
 
   it("fetch data from an api.", async () => {
-    expect(
-      await fetchRequest("https://api.github.com/users/wesleyara"),
-    ).toEqual(
+    expect(await fetcher("https://api.github.com/users/wesleyara")).toEqual(
       expect.objectContaining({
         login: "wesleyara",
       }),

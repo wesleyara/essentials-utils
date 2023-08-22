@@ -36,20 +36,20 @@ navigateHandler("/home", true);
 // Navigate to /home in a new tab
 ```
 
-## fetchRequest
+## fetcher
 
 Fetch data from an API.
 
 ```js
-import { fetchRequest } from "utils-react";
+import { fetcher } from "utils-react";
 
-fetchRequest("https://api.github.com/users/wesleyara")
+fetcher("https://api.github.com/users/wesleyara")
   .then(response => console.log(response))
   .catch(error => console.log(error));
 
 // or
 
-const response = await fetchRequest("https://api.github.com/users/wesleyara");
+const response = await fetcher("https://api.github.com/users/wesleyara");
 console.log(response);
 ```
 
