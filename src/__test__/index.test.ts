@@ -18,6 +18,7 @@ import {
   arrayLastItem,
   generateNullArray,
   generateRandomString,
+  generateRandomColor,
 } from "../index";
 
 describe("all methods in the package", () => {
@@ -116,5 +117,9 @@ describe("all methods in the package", () => {
 
   it("generate a random string", () => {
     expect(generateRandomString(10)).toBeTypeOf("string");
+  });
+
+  it("generate a random color", () => {
+    expect(generateRandomColor()).toBeTypeOf("string");
   });
 });
