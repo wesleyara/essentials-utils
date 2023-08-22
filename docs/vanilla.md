@@ -219,3 +219,63 @@ import { arrayLastItem } from "utils-react";
 
 arrayLastItem([1, 2, 3]); // 3
 ```
+
+## generateNullArray
+
+Generate an array with null values.
+
+```js
+import { generateNullArray } from "utils-react";
+
+generateNullArray(5); // [null, null, null, null, null]
+```
+
+## generateRandomString
+
+Generate a random string.
+
+```js
+import { generateRandomString } from "utils-react";
+
+generateRandomString(5); // 5f2d1
+```
+
+## generateRandomColor
+
+Generate a random color.
+
+```js
+import { generateRandomColor } from "utils-react";
+
+generateRandomColor(); // #f2d1a5
+```
+
+## setStorage
+
+Set a value in the local storage.
+
+```js
+import { setStorage } from "utils-react";
+
+setStorage("name", "Wesley");
+```
+
+## getStorage
+
+Get a value from the local storage.
+
+```js
+import { getStorage } from "utils-react";
+
+getStorage("name"); // Wesley
+```
+
+## removeStorage
+
+Remove a value from the local storage.
+
+```js
+import { removeStorage } from "utils-react";
+
+removeStorage("name");
+```

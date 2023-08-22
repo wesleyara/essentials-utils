@@ -99,6 +99,3 @@ This project follows the [all-contributors](https://github.com/all-contributors/
 
 utils-react is a open source project licensed as [MIT](LICENSE).
 
-```
-
-```
