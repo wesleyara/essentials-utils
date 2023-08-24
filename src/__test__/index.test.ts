@@ -2,7 +2,7 @@ import { describe, expect, it } from "vitest";
 
 import {
   upperFirst,
-  fetchRequest,
+  fetcher,
   delay,
   arrayEquals,
   arrayToObject,
@@ -16,6 +16,9 @@ import {
   generateRandomNumber,
   getPercentage,
   arrayLastItem,
+  generateNullArray,
+  generateRandomString,
+  generateRandomColor,
 } from "../index";
 
 describe("all methods in the package", () => {
@@ -24,9 +27,7 @@ describe("all methods in the package", () => {
   });
 
   it("fetch data from an api.", async () => {
-    expect(
-      await fetchRequest("https://api.github.com/users/wesleyara"),
-    ).toEqual(
+    expect(await fetcher("https://api.github.com/users/wesleyara")).toEqual(
       expect.objectContaining({
         login: "wesleyara",
       }),
@@ -108,5 +109,17 @@ describe("all methods in the package", () => {
 
   it("get the last item of an array.", () => {
     expect(arrayLastItem([1, 2, 3])).toBe(3);
+  });
+
+  it("generate a null array", () => {
+    expect(generateNullArray(3)).toEqual([null, null, null]);
+  });
+
+  it("generate a random string", () => {
+    expect(generateRandomString(10)).toBeTypeOf("string");
+  });
+
+  it("generate a random color", () => {
+    expect(generateRandomColor()).toBeTypeOf("string");
   });
 });

@@ -16,7 +16,7 @@ export const navigateHandler = (targetUrl: string, inNewWindow: boolean) => {
   }
 };
 
-export const fetchRequest = async (url: string) => {
+export const fetcher = async (url: string) => {
   const response = await axios.get(url);
   const data = await response.data;
 
@@ -140,4 +140,45 @@ export const deepClone = (item: any) => {
 
 export const arrayLastItem = (array: any[]) => {
   return array[array.length - 1];
+};
+
+export const generateNullArray = (quantity: number) => {
+  const arr: any = [];
+  for (let i = 0; i < quantity; i++) {
+    arr.push(null);
+  }
+  return arr;
+};
+
+export const setStorage = (key: string, value: any) => {
+  localStorage.setItem(key, JSON.stringify(value));
+};
+
+export const getStorage = (key: string) => {
+  const data = localStorage.getItem(key);
+
+  return data ? JSON.parse(data) : undefined;
+};
+
+export const removeStorage = (key: string) => {
+  localStorage.removeItem(key);
+};
+
+export const generateRandomString = (length: number) => {
+  const charactersWithSymbols =
+    "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*()_+";
+  let result = "";
+  const charactersLength = charactersWithSymbols.length;
+
+  for (let i = 0; i < length; i++) {
+    result += charactersWithSymbols.charAt(
+      Math.floor(Math.random() * charactersLength),
+    );
+  }
+
+  return result;
+};
+
+export const generateRandomColor = () => {
+  return "#" + Math.floor(Math.random() * 16777215).toString(16);
 };

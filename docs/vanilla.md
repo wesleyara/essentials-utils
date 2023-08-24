@@ -36,20 +36,20 @@ navigateHandler("/home", true);
 // Navigate to /home in a new tab
 ```
 
-## fetchRequest
+## fetcher
 
 Fetch data from an API.
 
 ```js
-import { fetchRequest } from "utils-react";
+import { fetcher } from "utils-react";
 
-fetchRequest("https://api.github.com/users/wesleyara")
+fetcher("https://api.github.com/users/wesleyara")
   .then(response => console.log(response))
   .catch(error => console.log(error));
 
 // or
 
-const response = await fetchRequest("https://api.github.com/users/wesleyara");
+const response = await fetcher("https://api.github.com/users/wesleyara");
 console.log(response);
 ```
 
@@ -218,4 +218,64 @@ Get the last item of an array.
 import { arrayLastItem } from "utils-react";
 
 arrayLastItem([1, 2, 3]); // 3
+```
+
+## generateNullArray
+
+Generate an array with null values.
+
+```js
+import { generateNullArray } from "utils-react";
+
+generateNullArray(5); // [null, null, null, null, null]
+```
+
+## generateRandomString
+
+Generate a random string.
+
+```js
+import { generateRandomString } from "utils-react";
+
+generateRandomString(5); // 5f2d1
+```
+
+## generateRandomColor
+
+Generate a random color.
+
+```js
+import { generateRandomColor } from "utils-react";
+
+generateRandomColor(); // #f2d1a5
+```
+
+## setStorage
+
+Set a value in the local storage.
+
+```js
+import { setStorage } from "utils-react";
+
+setStorage("name", "Wesley");
+```
+
+## getStorage
+
+Get a value from the local storage.
+
+```js
+import { getStorage } from "utils-react";
+
+getStorage("name"); // Wesley
+```
+
+## removeStorage
+
+Remove a value from the local storage.
+
+```js
+import { removeStorage } from "utils-react";
+
+removeStorage("name");
 ```
