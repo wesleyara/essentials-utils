@@ -1,4 +1,8 @@
-import { describe, expect, it } from "vitest";
+/**
+ * @jest-environment jsdom
+ */
+
+import { describe, expect, it, vitest } from "vitest";
 
 import {
   upperFirst,
@@ -19,6 +23,7 @@ import {
   generateNullArray,
   generateRandomString,
   generateRandomColor,
+  getNavigatorCurrentLocation,
 } from "../index";
 
 describe("all methods in the package", () => {
@@ -121,5 +126,49 @@ describe("all methods in the package", () => {
 
   it("generate a random color", () => {
     expect(generateRandomColor()).toBeTypeOf("string");
+  });
+
+  it("get current location", async () => {
+    const mockSuccessCallback = vitest.fn();
+    const mockErrorCallback = vitest.fn();
+
+    if (!global.navigator.geolocation) {
+      return;
+    }
+
+    global.navigator.geolocation.getCurrentPosition = vitest.fn(
+      (success, error) => {
+        success({
+          coords: {
+            latitude: 10,
+            longitude: 20,
+            accuracy: 1,
+            altitude: null,
+            altitudeAccuracy: null,
+            heading: null,
+            speed: null,
+          },
+          timestamp: 123,
+        });
+      },
+    );
+
+    const result = await getNavigatorCurrentLocation({
+      successCallback: mockSuccessCallback,
+      errorCallback: mockErrorCallback,
+    });
+
+    expect(result).toEqual({
+      coords: {
+        latitude: 10,
+        longitude: 20,
+        accuracy: 1,
+        altitude: null,
+        altitudeAccuracy: null,
+        heading: null,
+        speed: null,
+      },
+      timestamp: 123,
+    });
   });
 });

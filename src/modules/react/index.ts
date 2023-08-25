@@ -71,3 +71,21 @@ export const useNow = () => {
 
   return now;
 };
+
+export const useToggle = (
+  initialValue: boolean,
+): {
+  toggleValue: boolean;
+  handleToggleValue: () => void;
+} => {
+  const [toggleValue, setToggleValue] = useState(initialValue);
+
+  const handleToggleValue = () => {
+    setToggleValue(state => !state);
+  };
+
+  return {
+    toggleValue,
+    handleToggleValue,
+  };
+};
