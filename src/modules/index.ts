@@ -182,3 +182,17 @@ export const generateRandomString = (length: number) => {
 export const generateRandomColor = () => {
   return "#" + Math.floor(Math.random() * 16777215).toString(16);
 };
+
+export const getNavigatorCurrentLocation = async ({
+  successCallback,
+  errorCallback,
+}: {
+  successCallback: PositionCallback;
+  errorCallback: PositionErrorCallback;
+}) => {
+  const { coords, timestamp }: GeolocationPosition = await new Promise(() => {
+    navigator.geolocation.getCurrentPosition(successCallback, errorCallback);
+  });
+
+  return { coords, timestamp };
+};
