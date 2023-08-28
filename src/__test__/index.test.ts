@@ -136,22 +136,20 @@ describe("all methods in the package", () => {
       return;
     }
 
-    global.navigator.geolocation.getCurrentPosition = vitest.fn(
-      (success, error) => {
-        success({
-          coords: {
-            latitude: 10,
-            longitude: 20,
-            accuracy: 1,
-            altitude: null,
-            altitudeAccuracy: null,
-            heading: null,
-            speed: null,
-          },
-          timestamp: 123,
-        });
-      },
-    );
+    global.navigator.geolocation.getCurrentPosition = vitest.fn(success => {
+      success({
+        coords: {
+          latitude: 10,
+          longitude: 20,
+          accuracy: 1,
+          altitude: null,
+          altitudeAccuracy: null,
+          heading: null,
+          speed: null,
+        },
+        timestamp: 123,
+      });
+    });
 
     const result = await getNavigatorCurrentLocation({
       successCallback: mockSuccessCallback,

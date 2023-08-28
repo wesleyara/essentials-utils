@@ -1,5 +1,7 @@
 import axios from "axios";
 
+import { IGetNavigatorCurrentLocation } from "../@types";
+
 export const upperFirst = (str: string) => {
   return str.charAt(0).toUpperCase() + str.slice(1);
 };
@@ -186,10 +188,7 @@ export const generateRandomColor = () => {
 export const getNavigatorCurrentLocation = async ({
   successCallback,
   errorCallback,
-}: {
-  successCallback: PositionCallback;
-  errorCallback: PositionErrorCallback;
-}) => {
+}: IGetNavigatorCurrentLocation) => {
   const { coords, timestamp }: GeolocationPosition = await new Promise(() => {
     navigator.geolocation.getCurrentPosition(successCallback, errorCallback);
   });
