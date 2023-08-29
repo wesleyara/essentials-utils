@@ -64,3 +64,18 @@ import { useNow } from "utils-react";
 const now = useNow();
 console.log(now);
 ```
+
+## useToggle
+
+Toggle a boolean.
+
+```js
+import { useToggle } from "utils-react";
+
+// called in a component
+const { toggleValue, handleToggleValue } = useToggle();
+
+console.log(toggleValue); // false
+handleToggleValue();
+console.log(toggleValue); // true
+```

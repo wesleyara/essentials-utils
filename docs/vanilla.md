@@ -279,3 +279,13 @@ import { removeStorage } from "utils-react";
 
 removeStorage("name");
 ```
+
+## getNavigatorCurrentLocation
+
+Get the current location of the navigator.
+
+```js
+import { getNavigatorCurrentLocation } from "utils-react";
+
+getNavigatorCurrentLocation().then((location) => console.log(location));
+```
