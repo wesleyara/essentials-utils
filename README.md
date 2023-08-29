@@ -76,12 +76,18 @@ These are just some of the ways you can contribute to the project read the [CONT
 <table>
   <tr>
     <td align="center"><a href="https://wesleyaraujo.dev/"><img src="https://avatars.githubusercontent.com/u/89321125?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Wesley Araújo</b></sub></a><br /></td>
-    <td align="center"><a href="https://github.com/Patryck-Silva"><img src="https://avatars.githubusercontent.com/u/41785386?v=4" width="100px;" alt=""/><br /><sub><b>Patryck Silva</b></sub></a><br /></td>
-    <td align="center"><a href="https://github.com/joaoianuci"><img src="https://avatars.githubusercontent.com/u/42063789?v=4" width="100px;" alt=""/><br /><sub><b>João Vitor Ianuci</b></sub></a><br /></td>
   </tr>
 </table>
 
 ## ✨ Contributors
+
+<table>
+  <tr>
+    <td align="center"><a href="https://github.com/Patryck-Silva"><img src="https://avatars.githubusercontent.com/u/41785386?v=4" width="100px;" alt=""/><br /><sub><b>Patryck Silva</b></sub></a><br /></td>
+    <td align="center"><a href="https://github.com/joaoianuci"><img src="https://avatars.githubusercontent.com/u/42063789?v=4" width="100px;" alt=""/><br /><sub><b>João Vitor Ianuci</b></sub></a><br /></td>
+    <td align="center"><a href="https://github.com/Glerme"><img src="https://avatars.githubusercontent.com/u/62507710?v=4" width="100px;" alt=""/><br /><sub><b>Guilherme Felipe</b></sub></a><br /></td>
+  </tr>
+</table>
 
 Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
 
