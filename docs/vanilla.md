@@ -289,3 +289,43 @@ import { getNavigatorCurrentLocation } from "utils-react";
 
 getNavigatorCurrentLocation().then((location) => console.log(location));
 ```
+
+## phoneMask
+
+Mask a phone number.
+
+```js
+import { phoneMask } from "utils-react";
+
+phoneMask("1234567890"); // (12) 3456-7890
+```
+
+## cpfMask
+
+Mask a CPF number.
+
+```js
+import { cpfMask } from "utils-react";
+
+cpfMask("12345678900"); // 123.456.789-00
+```
+
+## cnpjMask
+
+Mask a CNPJ number.
+
+```js
+import { cnpjMask } from "utils-react";
+
+cnpjMask("12345678900000"); // 12.345.678/9000-00
+```
+
+## cepMask
+
+Mask a CEP number.
+
+```js 
+import { cepMask } from "utils-react";
+
+cepMask("12345678"); // 12345-678
+```
