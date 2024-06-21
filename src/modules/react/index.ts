@@ -1,5 +1,8 @@
 import { useEffect, useState } from "react";
 
+import { ISecurityStorage } from "../../@types";
+import { decryptHash, generateHash } from "../../utils";
+
 export const useDebounce = (value: any, delay: number) => {
   const [debouncedValue, setDebouncedValue] = useState(value);
 
@@ -87,5 +90,31 @@ export const useToggle = (
   return {
     toggleValue,
     handleToggleValue,
+  };
+};
+
+export const useSecurityStorage = ({ secret }: ISecurityStorage) => {
+  const setStorage = (key: string, value: any) => {
+    const valueHash = generateHash(JSON.stringify(value), secret);
+
+    localStorage.setItem(key, valueHash);
+  };
+
+  const getStorage = (key: string) => {
+    const valueHash = localStorage.getItem(key) || "";
+
+    const value = decryptHash(valueHash, secret);
+
+    return value;
+  };
+
+  const removeStorage = (key: string) => {
+    localStorage.removeItem(key);
+  };
+
+  return {
+    setStorage,
+    getStorage,
+    removeStorage,
   };
 };

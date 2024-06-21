@@ -79,3 +79,25 @@ console.log(toggleValue); // false
 handleToggleValue();
 console.log(toggleValue); // true
 ```
+
+## useSecurityStorage
+
+Save data in the local storage with encryption.
+
+```js
+import { useSecurityStorage } from "essentials-utils";
+
+// called in a component
+const { setStorage, getStorage, removeStorage } = useSecurityStorage();
+
+// save data
+setStorage("key", "value");
+
+// get data
+const data = getStorage("key");
+
+console.log(data); // value
+
+// remove data
+removeStorage("key");
+```
