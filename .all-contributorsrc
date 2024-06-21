@@ -43,8 +43,8 @@
     }
   ],
   "contributorsPerLine": 7,
-  "projectName": "utils-react",
-  "projectOwner": "utils-react",
+  "projectName": "utils-hub",
+  "projectOwner": "utils-hub",
   "repoType": "github",
   "repoHost": "https://github.com",
   "skipCi": true
