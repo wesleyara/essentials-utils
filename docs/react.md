@@ -7,7 +7,7 @@ Here will be all the methods that can be used in react.
 Debounce hook is used to minimize backend requests on inputs.
 
 ```js
-import { useDebounce } from "@utils/hub";
+import { useDebounce } from "essentials-utils";
 
 const [value, setValue] = useState("");
 const debouncedValue = useDebounce(value, 1000);
@@ -22,7 +22,7 @@ useEffect(() => {
 Get the width of the window.
 
 ```js
-import { useWidth } from "@utils/hub";
+import { useWidth } from "essentials-utils";
 
 // called in a component
 const width = useWidth();
@@ -34,7 +34,7 @@ console.log(width);
 Get the height of the window.
 
 ```js
-import { useHeight } from "@utils/hub";
+import { useHeight } from "essentials-utils";
 
 // called in a component
 const height = useHeight();
@@ -46,7 +46,7 @@ console.log(height);
 Get the scroll position of the window.
 
 ```js
-import { useScroll } from "@utils/hub";
+import { useScroll } from "essentials-utils";
 
 // called in a component
 const scroll = useScroll();
@@ -58,7 +58,7 @@ console.log(scroll);
 Get the current time.
 
 ```js
-import { useNow } from "@utils/hub";
+import { useNow } from "essentials-utils";
 
 // called in a component
 const now = useNow();
@@ -70,7 +70,7 @@ console.log(now);
 Toggle a boolean.
 
 ```js
-import { useToggle } from "@utils/hub";
+import { useToggle } from "essentials-utils";
 
 // called in a component
 const { toggleValue, handleToggleValue } = useToggle();

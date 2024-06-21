@@ -43,8 +43,8 @@
     }
   ],
   "contributorsPerLine": 7,
-  "projectName": "@utils/hub",
-  "projectOwner": "@utils/hub",
+  "projectName": "essentials-utils",
+  "projectOwner": "essentials-utils",
   "repoType": "github",
   "repoHost": "https://github.com",
   "skipCi": true
