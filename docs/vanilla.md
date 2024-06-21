@@ -7,7 +7,7 @@ Here will be all the methods that can be used in vanilla javascript/typescript a
 Capitalize the first letter of the string.
 
 ```js
-import { upperFirst } from "utils-hub";
+import { upperFirst } from "@utils/hub";
 
 upperFirst("hello world"); // Hello world
 ```
@@ -17,7 +17,7 @@ upperFirst("hello world"); // Hello world
 Generates an array of numbers.
 
 ```js
-import { generateArray } from "utils-hub";
+import { generateArray } from "@utils/hub";
 
 generateArray(10); // [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
 ```
@@ -27,7 +27,7 @@ generateArray(10); // [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
 Navigate to a specific route.
 
 ```js
-import { navigateHandler } from "utils-hub";
+import { navigateHandler } from "@utils/hub";
 
 navigateHandler("/home", false);
 // Navigate to /home
@@ -41,7 +41,7 @@ navigateHandler("/home", true);
 Fetch data from an API.
 
 ```js
-import { fetcher } from "utils-hub";
+import { fetcher } from "@utils/hub";
 
 fetcher("https://api.github.com/users/wesleyara")
   .then(response => console.log(response))
@@ -58,7 +58,7 @@ console.log(response);
 Delay the execution of a function.
 
 ```js
-import { delay } from "utils-hub";
+import { delay } from "@utils/hub";
 
 delay(1000).then(() => console.log("Hello world"));
 
@@ -72,7 +72,7 @@ await delay(1000);
 Reverse a string.
 
 ```js
-import { reverseString } from "utils-hub";
+import { reverseString } from "@utils/hub";
 
 reverseString("Hello world"); // dlrow olleH
 ```
@@ -82,7 +82,7 @@ reverseString("Hello world"); // dlrow olleH
 Check if two arrays are equal.
 
 ```js
-import { arrayEquals } from "utils-hub";
+import { arrayEquals } from "@utils/hub";
 
 arrayEquals([1, 2, 3], [1, 2, 3]); // true
 ```
@@ -92,7 +92,7 @@ arrayEquals([1, 2, 3], [1, 2, 3]); // true
 Convert an array to an object.
 
 ```js
-import { arrayToObject } from "utils-hub";
+import { arrayToObject } from "@utils/hub";
 
 arrayToObject(
   [
@@ -108,7 +108,7 @@ arrayToObject(
 Remove an item from an array.
 
 ```js
-import { removeArrayItemByValue } from "utils-hub";
+import { removeArrayItemByValue } from "@utils/hub";
 
 removeArrayItemByValue([1, 2, 3], 2); // [1, 3]
 ```
@@ -118,7 +118,7 @@ removeArrayItemByValue([1, 2, 3], 2); // [1, 3]
 Remove an item from an array by index.
 
 ```js
-import { removeArrayItemByIndex } from "utils-hub";
+import { removeArrayItemByIndex } from "@utils/hub";
 
 removeArrayItemByIndex([1, 2, 3], 1); // [1, 3]
 ```
@@ -128,7 +128,7 @@ removeArrayItemByIndex([1, 2, 3], 1); // [1, 3]
 Convert an object to an array.
 
 ```js
-import { objectToArray } from "utils-hub";
+import { objectToArray } from "@utils/hub";
 
 objectToArray({ a: 1, b: 2 }); // [{ a: 1 }, { b: 2 }]
 ```
@@ -138,7 +138,7 @@ objectToArray({ a: 1, b: 2 }); // [{ a: 1 }, { b: 2 }]
 Get the current route.
 
 ```js
-import { currentRouter } from "utils-hub";
+import { currentRouter } from "@utils/hub";
 
 const router = currentRouter();
 console.log(router.pathname); // /home
@@ -149,7 +149,7 @@ console.log(router.pathname); // /home
 Log a message in the console.
 
 ```js
-import { smartLog } from "utils-hub";
+import { smartLog } from "@utils/hub";
 
 const App = () => {
   smartLog("Hello world", App); // [App] - DEBUG: Hello world
@@ -161,7 +161,7 @@ const App = () => {
 Check if an object is empty.
 
 ```js
-import { isEmptyObject } from "utils-hub";
+import { isEmptyObject } from "@utils/hub";
 
 isEmptyObject({}); // true
 ```
@@ -171,7 +171,7 @@ isEmptyObject({}); // true
 random array method
 
 ```js
-import { shuffleArray } from "utils-hub";
+import { shuffleArray } from "@utils/hub";
 
 // called in a component
 const arr1 = [1, 2, 3, 4, 5];
@@ -184,7 +184,7 @@ console.log("arr2", arr2);
 Generate a random number.
 
 ```js
-import { generateRandomNumber } from "utils-hub";
+import { generateRandomNumber } from "@utils/hub";
 
 generateRandomNumber(1, 10); // 5
 ```
@@ -194,7 +194,7 @@ generateRandomNumber(1, 10); // 5
 Get the percentage of a number.
 
 ```js
-import { getPercentage } from "utils-hub";
+import { getPercentage } from "@utils/hub";
 
 getPercentage(10, 100); // 10
 ```
@@ -204,7 +204,7 @@ getPercentage(10, 100); // 10
 Clone an item.
 
 ```js
-import { deepClone } from "utils-hub";
+import { deepClone } from "@utils/hub";
 
 const obj = { a: 1, b: 2 };
 const obj2 = deepClone(obj); // { a: 1, b: 2 }
@@ -215,7 +215,7 @@ const obj2 = deepClone(obj); // { a: 1, b: 2 }
 Get the last item of an array.
 
 ```js
-import { arrayLastItem } from "utils-hub";
+import { arrayLastItem } from "@utils/hub";
 
 arrayLastItem([1, 2, 3]); // 3
 ```
@@ -225,7 +225,7 @@ arrayLastItem([1, 2, 3]); // 3
 Generate an array with null values.
 
 ```js
-import { generateNullArray } from "utils-hub";
+import { generateNullArray } from "@utils/hub";
 
 generateNullArray(5); // [null, null, null, null, null]
 ```
@@ -235,7 +235,7 @@ generateNullArray(5); // [null, null, null, null, null]
 Generate a random string.
 
 ```js
-import { generateRandomString } from "utils-hub";
+import { generateRandomString } from "@utils/hub";
 
 generateRandomString(5); // 5f2d1
 ```
@@ -245,7 +245,7 @@ generateRandomString(5); // 5f2d1
 Generate a random color.
 
 ```js
-import { generateRandomColor } from "utils-hub";
+import { generateRandomColor } from "@utils/hub";
 
 generateRandomColor(); // #f2d1a5
 ```
@@ -255,7 +255,7 @@ generateRandomColor(); // #f2d1a5
 Set a value in the local storage.
 
 ```js
-import { setStorage } from "utils-hub";
+import { setStorage } from "@utils/hub";
 
 setStorage("name", "Wesley");
 ```
@@ -265,7 +265,7 @@ setStorage("name", "Wesley");
 Get a value from the local storage.
 
 ```js
-import { getStorage } from "utils-hub";
+import { getStorage } from "@utils/hub";
 
 getStorage("name"); // Wesley
 ```
@@ -275,7 +275,7 @@ getStorage("name"); // Wesley
 Remove a value from the local storage.
 
 ```js
-import { removeStorage } from "utils-hub";
+import { removeStorage } from "@utils/hub";
 
 removeStorage("name");
 ```
@@ -285,7 +285,7 @@ removeStorage("name");
 Get the current location of the navigator.
 
 ```js
-import { getNavigatorCurrentLocation } from "utils-hub";
+import { getNavigatorCurrentLocation } from "@utils/hub";
 
 getNavigatorCurrentLocation().then((location) => console.log(location));
 ```
@@ -295,7 +295,7 @@ getNavigatorCurrentLocation().then((location) => console.log(location));
 Mask a phone number.
 
 ```js
-import { phoneMask } from "utils-hub";
+import { phoneMask } from "@utils/hub";
 
 phoneMask("1234567890"); // (12) 3456-7890
 ```
@@ -305,7 +305,7 @@ phoneMask("1234567890"); // (12) 3456-7890
 Mask a CPF number.
 
 ```js
-import { cpfMask } from "utils-hub";
+import { cpfMask } from "@utils/hub";
 
 cpfMask("12345678900"); // 123.456.789-00
 ```
@@ -315,7 +315,7 @@ cpfMask("12345678900"); // 123.456.789-00
 Mask a CNPJ number.
 
 ```js
-import { cnpjMask } from "utils-hub";
+import { cnpjMask } from "@utils/hub";
 
 cnpjMask("12345678900000"); // 12.345.678/9000-00
 ```
@@ -325,7 +325,7 @@ cnpjMask("12345678900000"); // 12.345.678/9000-00
 Mask a CEP number.
 
 ```js 
-import { cepMask } from "utils-hub";
+import { cepMask } from "@utils/hub";
 
 cepMask("12345678"); // 12345-678
 ```
