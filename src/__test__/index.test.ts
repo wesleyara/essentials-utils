@@ -135,6 +135,7 @@ describe("all methods in the package", () => {
   it("get current location", async () => {
     const mockSuccessCallback = vitest.fn();
     const mockErrorCallback = vitest.fn();
+    const mockToJSON = vitest.fn();
 
     if (!global.navigator.geolocation) {
       return;
@@ -150,8 +151,10 @@ describe("all methods in the package", () => {
           altitudeAccuracy: null,
           heading: null,
           speed: null,
+          toJSON: mockToJSON,
         },
         timestamp: 123,
+        toJSON: mockToJSON,
       });
     });
 
