@@ -28,6 +28,7 @@ import {
   cpfMask,
   cnpjMask,
   cepMask,
+  colorLog,
 } from "../index";
 
 describe("all methods in the package", () => {
@@ -191,5 +192,14 @@ describe("all methods in the package", () => {
 
   it("cep mask", () => {
     expect(cepMask("99999999")).toBe("99999-999");
+  });
+
+  it("color log", () => {
+    const mockLog = vitest.fn();
+    global.console.log = mockLog;
+
+    mockLog(colorLog("foo", { color: "red" }));
+
+    expect(mockLog).toHaveBeenCalledWith("\x1b[31mfoo\x1b[0m");
   });
 });

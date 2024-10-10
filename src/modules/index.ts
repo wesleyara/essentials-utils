@@ -1,6 +1,13 @@
 import axios from "axios";
 
-import { IGetNavigatorCurrentLocation } from "../@types";
+import { IColorLogOptions, IGetNavigatorCurrentLocation } from "../@types";
+import {
+  backgroundColors,
+  bright,
+  fontColors,
+  reset,
+  underscore,
+} from "../utils/constants";
 
 export const upperFirst = (str: string) => {
   return str.charAt(0).toUpperCase() + str.slice(1);
@@ -229,4 +236,24 @@ export const cepMask = (value: string) => {
   }
 
   return value.replace(/\D/g, "").replace(/(\d{5})(\d)/, "$1-$2");
+};
+
+export const colorLog = (str: string, options: IColorLogOptions) => {
+  const { color, bgColor, bold, underline } = options;
+
+  let result = "";
+  if (color) {
+    result += fontColors[color];
+  }
+  if (bgColor) {
+    result += backgroundColors[bgColor];
+  }
+  if (bold) {
+    result += bright;
+  }
+  if (underline) {
+    result += underscore;
+  }
+
+  return `${result}${str}${reset}`;
 };

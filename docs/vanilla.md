@@ -329,3 +329,13 @@ import { cepMask } from "essentials-utils";
 
 cepMask("12345678"); // 12345-678
 ```
+
+## colorlog
+
+Log a message in the console with color.
+
+```js
+import { colorlog } from "essentials-utils";
+
+console.log(colorlog("Hello world", { color: "red" }));
+```
