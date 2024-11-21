@@ -22,3 +22,9 @@ export interface IColorLogOptions {
   bold?: boolean;
   underline?: boolean;
 }
+
+export interface INoDuplicateOptions {
+  isObject: boolean;
+  anchorKeys: string | string[];
+  counts: boolean;
+}
