@@ -10,12 +10,3 @@ export const arrayToObject = <TArray = unknown>(
 
   return obj;
 };
-
-const array = [
-  { id: "1", name: "John", detail: { age: 20 } },
-  { id: "2", name: "Doe", detail: { age: 30 } },
-];
-
-const obj = arrayToObject(array, "detail");
-
-console.log(obj);
