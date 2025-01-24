@@ -287,7 +287,7 @@ Get the current location of the navigator.
 ```js
 import { getNavigatorCurrentLocation } from "essentials-utils";
 
-getNavigatorCurrentLocation().then((location) => console.log(location));
+getNavigatorCurrentLocation().then(location => console.log(location));
 ```
 
 ## phoneMask
@@ -324,7 +324,7 @@ cnpjMask("12345678900000"); // 12.345.678/9000-00
 
 Mask a CEP number.
 
-```js 
+```js
 import { cepMask } from "essentials-utils";
 
 cepMask("12345678"); // 12345-678
@@ -338,4 +338,44 @@ Log a message in the console with color.
 import { colorLog } from "essentials-utils";
 
 console.log(colorLog("Hello world", { color: "red" }));
+```
+
+## useRemoveDuplicate
+
+Remove duplicates from a array, you can define with keys you want to prevent to stack and count how many duplicates you have.
+
+```js
+import { removeDuplicates } from "essentials-utils";
+
+const arrayFullOfDuplicates = [1, 2, 2, 3, 4, 4, 5];
+const noDuplicateArray = removeDuplicates(arrayFullOfDuplicates);
+
+console.log(noDuplicateArray); // [1, 2, 3, 4, 5]
+```
+
+```js
+import { removeDuplicates } from "essentials-utils";
+
+const arrayFullOfDuplicates = [
+  { id: 1, name: "John" },
+  { id: 2, name: "Jane" },
+  { id: 1, name: "John" },
+  { id: 3, name: "Doe" },
+  { id: 2, name: "Jane" },
+];
+
+const options = {
+  isObject: true,
+  anchorKeys: ["id"],
+  counts: true,
+};
+
+const noDuplicateArray = removeDuplicates(arrayFullOfDuplicates, options);
+
+console.log(noDuplicateArray);
+// [
+//   { id: 1, name: "John", _quantity: 2 },
+//   { id: 2, name: "Jane", _quantity: 2 },
+//   { id: 3, name: "Doe", _quantity: 1 },
+// ]
 ```
