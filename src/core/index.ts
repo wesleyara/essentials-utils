@@ -15,7 +15,7 @@ export * from "./getStorage";
 export * from "./isEmptyObject";
 export * from "./mask";
 export * from "./objectToArray";
-export * from "./removeArrayByIndex";
+export * from "./removeArrayItemByIndex";
 export * from "./removeArrayItemByValue";
 export * from "./removeStorage";
 export * from "./reverseString";
