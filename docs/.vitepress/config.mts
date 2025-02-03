@@ -56,7 +56,8 @@ function sidebarGuide(): DefaultTheme.SidebarItem[] {
         collapsed: false,
         items: [
           { text: "arrayEquals", link: '/arrayEquals/' },
-        ]
+          { text: "delay", link: '/delay/' },
+        ].sort((a, b) => a.text.localeCompare(b.text))
       },
     ]
 }
