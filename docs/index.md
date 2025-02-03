@@ -11,8 +11,8 @@ hero:
       text: What is Essentials utils?
       link: /guide/what-is-essentials-utils
     - theme: alt
-      text: Quickstart
-      link: /guide/quickstart
+      text: Instalation
+      link: /guide/instalation
     - theme: alt
       text: GitHub
       link: https://github.com/wesleyara/essentials-utils

@@ -2,7 +2,9 @@
 
 Delay the execution of a function.
 
-## Using then
+## Usage
+
+### Using then/catch
 
 ```js
 import { delay } from "essentials-utils";
@@ -10,7 +12,7 @@ import { delay } from "essentials-utils";
 delay(1000).then(() => console.log("Hello world"));
 ```
 
-## Using async/await
+### Using async/await
 
 ```js
 import { delay } from "essentials-utils";
@@ -20,3 +22,13 @@ async function main() {
   console.log("Hello world");
 }
 ```
+
+## Type Declarations
+
+<details>
+  <summary class="italic cursor-pointer">Show Type Declarations</summary>
+
+```ts
+export declare function delay(ms: number): Promise<void>;
+```
+</details>
