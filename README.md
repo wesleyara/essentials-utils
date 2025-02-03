@@ -17,6 +17,9 @@
  <a href="#-license">:page_facing_up: License</a>
 </h4>
 
+
+<span>See the documentation: <a href="https://essentials-utils.wesleyaraujo.dev/">https://essentials-utils.wesleyaraujo.dev/</a></span>
+
 <br>
 
 # :rocket: How use
@@ -59,8 +62,6 @@ useEffect(() => {
   console.log(debouncedValue);
 }, [debouncedValue]);
 ```
-
-for more information, see the docs, [Vanilla](/docs/vanilla.md) and [React](/docs/react.md)
 
 # :pencil: Contributing
 
