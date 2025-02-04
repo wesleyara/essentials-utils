@@ -102,7 +102,6 @@ function sidebarGuide(): DefaultTheme.SidebarItem[] {
           },
           { text: 'getPercentage', link: '/getPercentage/' },
           { text: 'getStorage', link: '/getStorage/' },
-          { text: 'index.js', link: '/index.js/' },
           { text: 'isEmptyObject', link: '/isEmptyObject/' },
           { text: 'objectToArray', link: '/objectToArray/' },
           { text: 'phoneMask', link: '/phoneMask/' },
