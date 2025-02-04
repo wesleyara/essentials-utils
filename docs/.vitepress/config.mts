@@ -74,7 +74,7 @@ function sidebarGuide(): DefaultTheme.SidebarItem[] {
         collapsed: false,
         items: [
           { text: 'What is Essentials utils?',  link: '/what-is-essentials-utils/' },
-          { text: 'Instalation', link: '/instalation/' },
+          { text: 'Installation', link: '/installation/' },
         ]
       },
       {
