@@ -11,11 +11,14 @@ hero:
       text: What is Essentials utils?
       link: /guide/what-is-essentials-utils
     - theme: alt
-      text: Instalation
-      link: /guide/instalation
+      text: Installation
+      link: /guide/installation
     - theme: alt
       text: GitHub
       link: https://github.com/wesleyara/essentials-utils
+  image:
+    src: /favicon.png
+    alt: essentials-utils logo
 
 features:
   - title: Simple

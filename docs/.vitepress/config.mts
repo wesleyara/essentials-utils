@@ -1,4 +1,5 @@
 import { type DefaultTheme, defineConfig } from 'vitepress'
+import { groupIconMdPlugin, groupIconVitePlugin, localIconLoader } from 'vitepress-plugin-group-icons'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -6,6 +7,22 @@ export default defineConfig({
   title: "Essentials utils",
   description: "Powerfull js/ts functions",
   srcExclude: ["**/parts/**.md"],
+  markdown: {
+    config(md) {
+      md.use(groupIconMdPlugin)
+    },
+  },
+  head: [
+    ['link', { rel: 'icon', type: 'image/svg+xml', href: '/favicon.svg' }],
+    ['link', { rel: 'icon', type: 'image/png', href: '/favicon.png' }],
+    ['meta', { name: 'theme-color', content: '#5f67ee' }],
+    ['meta', { property: 'og:type', content: 'website' }],
+    ['meta', { property: 'og:locale', content: 'en' }],
+    ['meta', { property: 'og:title', content: 'Essentials Utils' }],
+    ['meta', { property: 'og:site_name', content: 'EssentialsUtils' }],
+    ['meta', { property: 'og:image', content: 'https://essentials-utils.wesleyaraujo.dev/og-img.png' }],
+    ['meta', { property: 'og:url', content: 'https://essentials-utils.wesleyaraujo.dev/' }],
+  ],
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
@@ -40,6 +57,11 @@ export default defineConfig({
     search: {
       provider: 'local'
     },
+  },
+  vite: {
+    plugins: [
+      groupIconVitePlugin() as any,
+    ]
   }
 })
 
