@@ -12,10 +12,10 @@ upperFirst("hello world"); // Hello world
 
 ## Type Declarations
 
-<details>
-  <summary class="italic cursor-pointer">Show Type Declarations</summary>
+::: details Show type declarations
 
 ```ts
 export declare function upperFirst(value: string): string;
 ```
-</details>
+
+:::

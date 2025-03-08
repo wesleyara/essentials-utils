@@ -12,12 +12,10 @@ objectToArray({ a: 1, b: 2 }); // [{ a: 1 }, { b: 2 }]
 
 ## Type Declarations
 
-<details>
-  <summary class="italic cursor-pointer">Show Type Declarations</summary>
+::: details Show type declarations
 
 ```ts
-export declare function objectToArray(
-  object: any,
-): any[];
+export declare function objectToArray(object: any): any[];
 ```
-</details>
+
+:::

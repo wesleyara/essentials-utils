@@ -12,8 +12,7 @@ arrayEquals([1, 2, 3], [1, 2, 3]); // true
 
 ## Type Declarations
 
-<details>
-  <summary class="italic cursor-pointer">Show Type Declarations</summary>
+::: details Show type declarations
 
 ```ts
 export declare function arrayEquals<TArray = unknown>(
@@ -21,4 +20,5 @@ export declare function arrayEquals<TArray = unknown>(
   array2: TArray[],
 ): boolean;
 ```
-</details>
+
+:::

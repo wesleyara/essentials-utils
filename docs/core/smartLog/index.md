@@ -14,8 +14,7 @@ const App = () => {
 
 ## Type Declarations
 
-<details>
-  <summary class="italic cursor-pointer">Show Type Declarations</summary>
+::: details Show type declarations
 
 ```ts
 export declare function smartLog<TValue = unknown>(
@@ -24,5 +23,5 @@ export declare function smartLog<TValue = unknown>(
   label?: string,
 ): void;
 ```
-</details>
 
+:::

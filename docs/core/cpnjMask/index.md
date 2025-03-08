@@ -12,10 +12,10 @@ cnpjMask("12345678900000"); // 12.345.678/9000-00
 
 ## Type Declarations
 
-<details>
-  <summary class="italic cursor-pointer">Show Type Declarations</summary>
+::: details Show type declarations
 
 ```ts
 export declare function cnpjMask(value: string): string;
 ```
-</details>
+
+:::

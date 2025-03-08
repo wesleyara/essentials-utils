@@ -7,7 +7,9 @@ Save data in the local storage with encryption.
 ```js
 import { useSecurityStorage } from "essentials-utils";
 
-const { setStorage, getStorage, removeStorage } = useSecurityStorage({ secret: import.meta.env.VITE_SECRET });
+const { setStorage, getStorage, removeStorage } = useSecurityStorage({
+  secret: import.meta.env.VITE_SECRET,
+});
 ```
 
 ### Save data
@@ -32,8 +34,7 @@ removeStorage("key");
 
 ## Type Declarations
 
-<details>
-  <summary class="italic cursor-pointer">Show Type Declarations</summary>
+::: details Show type declarations
 
 ```ts
 interface SecurityStorageOptions {
@@ -48,4 +49,5 @@ export declare function useSecurityStorage<TValue = unknown>(
   removeStorage: (key: string) => void;
 };
 ```
-</details>
+
+:::

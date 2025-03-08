@@ -12,13 +12,10 @@ generateRandomNumber(1, 10); // 5
 
 ## Type Declarations
 
-<details>
-  <summary class="italic cursor-pointer">Show Type Declarations</summary>
+::: details Show type declarations
 
 ```ts
-export declare function generateRandomNumber(
-  min: number,
-  max: number,
-): number;
+export declare function generateRandomNumber(min: number, max: number): number;
 ```
-</details>
+
+:::

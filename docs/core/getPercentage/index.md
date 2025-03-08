@@ -12,8 +12,7 @@ getPercentage(10, 100); // 10
 
 ## Type Declarations
 
-<details>
-  <summary class="italic cursor-pointer">Show Type Declarations</summary>
+::: details Show type declarations
 
 ```ts
 export declare function getPercentage(
@@ -21,4 +20,5 @@ export declare function getPercentage(
   maxAmount: number,
 ): number;
 ```
-</details>
+
+:::

@@ -5,7 +5,7 @@ Toggle a boolean.
 ## Usage
 
 ```js
-import { useToggle } from "essentials-utils";
+import { useToggle } from "essentials-utils/react";
 
 // called in a component
 const { toggleValue, handleToggleValue } = useToggle();
@@ -17,13 +17,13 @@ console.log(toggleValue); // true
 
 ## Type Declarations
 
-<details>
-  <summary class="italic cursor-pointer">Show Type Declarations</summary>
+::: details Show type declarations
 
 ```ts
 export declare function useToggle(initialValue: boolean): {
-    toggleValue: boolean;
-    handleToggleValue: () => void;
+  toggleValue: boolean;
+  handleToggleValue: () => void;
 };
 ```
-</details>
+
+:::

@@ -128,7 +128,16 @@ function sidebarGuide(): DefaultTheme.SidebarItem[] {
           { text: "useScroll", link: '/useScroll/' },
           { text: "useToggle", link: '/useToggle/' },
           { text: "useWidth", link: '/useWidth/' },
+          { text: "useMousePotision", link: "/useMousePosition/" },
         ].sort((a, b) => a.text.localeCompare(b.text))
       },
+      {
+        text: 'Vue',
+        base: '/vue',
+        collapsed: false,
+        items: [
+          { text: "useMousePotision", link: "/useMousePosition/" },
+        ].sort((a, b) => a.text.localeCompare(b.text))
+      }
     ]
 }

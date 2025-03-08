@@ -12,8 +12,7 @@ getNavigatorCurrentLocation().then(location => console.log(location));
 
 ## Type Declarations
 
-<details>
-  <summary class="italic cursor-pointer">Show Type Declarations</summary>
+::: details Show type declarations
 
 ```ts
 export interface GetNavigatorCurrentLocationProps {
@@ -22,11 +21,12 @@ export interface GetNavigatorCurrentLocationProps {
 }
 
 export declare function getNavigatorCurrentLocation({
-    successCallback,
-    errorCallback,
-  }: GetNavigatorCurrentLocationProps): Promise<{
-    coords: GeolocationCoordinates;
-    timestamp: number;
+  successCallback,
+  errorCallback,
+}: GetNavigatorCurrentLocationProps): Promise<{
+  coords: GeolocationCoordinates;
+  timestamp: number;
 }>;
 ```
-</details>
+
+:::

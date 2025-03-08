@@ -5,7 +5,7 @@ Debounce hook is used to minimize backend requests on inputs.
 ## Usage
 
 ```js
-import { useDebounce } from "essentials-utils";
+import { useDebounce } from "essentials-utils/react";
 
 const [value, setValue] = useState("");
 const debouncedValue = useDebounce(value, 1000);
@@ -17,10 +17,13 @@ useEffect(() => {
 
 ## Type Declarations
 
-<details>
-  <summary class="italic cursor-pointer">Show Type Declarations</summary>
+::: details Show type declarations
 
 ```ts
-export declare function useDebounce<TValue = unknown>(value: TValue, delay: number): T;
+export declare function useDebounce<TValue = unknown>(
+  value: TValue,
+  delay: number,
+): T;
 ```
-</details>
+
+:::

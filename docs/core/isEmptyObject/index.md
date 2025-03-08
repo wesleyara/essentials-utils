@@ -12,12 +12,10 @@ isEmptyObject({}); // true
 
 ## Type Declarations
 
-<details>
-  <summary class="italic cursor-pointer">Show Type Declarations</summary>
+::: details Show type declarations
 
 ```ts
-export declare function isEmptyObject<TObject = unknown>(
-  obj: TObject,
-): boolean;
+export declare function isEmptyObject<TObject = unknown>(obj: TObject): boolean;
 ```
-</details>
+
+:::

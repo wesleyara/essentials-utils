@@ -5,7 +5,7 @@ Get the current time.
 ## Usage
 
 ```js
-import { useNow } from "essentials-utils";
+import { useNow } from "essentials-utils/react";
 
 // called in a component
 const now = useNow();
@@ -14,10 +14,10 @@ console.log(now);
 
 ## Type Declarations
 
-<details>
-  <summary class="italic cursor-pointer">Show Type Declarations</summary>
+::: details Show type declarations
 
 ```ts
 export declare function useNow(): number;
 ```
-</details>
+
+:::
