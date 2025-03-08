@@ -1,4 +1,3 @@
-
 # useRemoveDuplicates
 
 Remove duplicates from a array, you can define with keys you want to prevent to stack and count how many duplicates you have.
@@ -47,8 +46,7 @@ console.log(noDuplicateArray);
 
 ## Type Declarations
 
-<details>
-  <summary class="italic cursor-pointer">Show Type Declarations</summary>
+::: details Show type declarations
 
 ```ts
 type AnchorKeysType<TArray> = keyof TArray | (keyof TArray)[];
@@ -64,4 +62,5 @@ export declare function useRemoveDuplicates<TArray = unknowm>(
   options?: Partial<RemoveDuplicatesOptions<TArray>>,
 ): TArray[];
 ```
-</details>
+
+:::

@@ -10,12 +10,10 @@ generateNullArray(5); // [null, null, null, null, null]
 
 ## Type Declarations
 
-<details>
-  <summary class="italic cursor-pointer">Show Type Declarations</summary>
+::: details Show type declarations
 
 ```ts
-export declare function generateNullArray(
-  quantity: number,
-): null[];
+export declare function generateNullArray(quantity: number): null[];
 ```
-</details>
+
+:::

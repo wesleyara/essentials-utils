@@ -12,12 +12,10 @@ generateRandomString(5); // 5f2d1
 
 ## Type Declarations
 
-<details>
-  <summary class="italic cursor-pointer">Show Type Declarations</summary>
+::: details Show type declarations
 
 ```ts
-export declare function generateRandomString(
-  length: number,
-): string;
+export declare function generateRandomString(length: number): string;
 ```
-</details>
+
+:::

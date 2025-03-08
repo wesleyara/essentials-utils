@@ -12,8 +12,7 @@ removeArrayItemByIndex([1, 2, 3], 1); // [1, 3]
 
 ## Type Declarations
 
-<details>
-  <summary class="italic cursor-pointer">Show Type Declarations</summary>
+::: details Show type declarations
 
 ```ts
 export declare function removeArrayItemByIndex<TArray = unknown>(
@@ -21,4 +20,5 @@ export declare function removeArrayItemByIndex<TArray = unknown>(
   index: number,
 ): TArray[];
 ```
-</details>
+
+:::

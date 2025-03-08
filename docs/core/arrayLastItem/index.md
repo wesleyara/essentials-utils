@@ -12,12 +12,12 @@ arrayLastItem([1, 2, 3]); // 3
 
 ## Type Declarations
 
-<details>
-  <summary class="italic cursor-pointer">Show Type Declarations</summary>
+::: details Show type declarations
 
 ```ts
 export declare function arrayLastItem<TArray = unknown>(
   array: TArray[],
 ): TArray;
 ```
-</details>
+
+:::

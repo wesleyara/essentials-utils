@@ -1,9 +1,23 @@
 {
   "name": "essentials-utils",
   "version": "1.2.8",
-  "description": "A React utils functions.",
+  "description": "A powerfull js/ts functions",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./lib/index.js",
+      "types": "./lib/index.d.ts"
+    },
+    "./react": {
+      "import": "./lib/react/index.js",
+      "types": "./lib/react/index.d.ts"
+    },
+    "./vue": {
+      "import": "./lib/vue/index.js",
+      "types": "./lib/vue/index.d.ts"
+    }
+  },
   "scripts": {
     "test": "vitest",
     "test:run": "vitest run",
@@ -48,7 +62,8 @@
   "dependencies": {
     "crypto-js": "^4.2.0",
     "react": "^18.2.0",
-    "rimraf": "^3.0.2"
+    "rimraf": "^3.0.2",
+    "vue": "^3.5.13"
   },
   "devDependencies": {
     "@commitlint/cli": "^17.3.0",

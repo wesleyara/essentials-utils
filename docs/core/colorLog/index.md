@@ -12,8 +12,7 @@ console.log(colorLog("Hello world", { color: "red" }));
 
 ## Type Declarations
 
-<details>
-  <summary class="italic cursor-pointer">Show Type Declarations</summary>
+::: details Show type declarations
 
 ```ts
 type IColors =
@@ -35,4 +34,5 @@ export interface ColorLogOptions {
 
 export declare function colorLog(str: string, options: ColorLogOptions): string;
 ```
-</details>
+
+:::

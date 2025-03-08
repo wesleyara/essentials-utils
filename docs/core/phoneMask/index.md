@@ -12,10 +12,10 @@ phoneMask("1234567890"); // (12) 3456-7890
 
 ## Type Declarations
 
-<details>
-  <summary class="italic cursor-pointer">Show Type Declarations</summary>
+::: details Show type declarations
 
 ```ts
 export declare function phoneMask(value: string): string;
 ```
-</details>
+
+:::

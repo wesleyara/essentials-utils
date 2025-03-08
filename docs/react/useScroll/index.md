@@ -5,7 +5,7 @@ Get the scroll position of the window.
 ## Usage
 
 ```js
-import { useScroll } from "essentials-utils";
+import { useScroll } from "essentials-utils/react";
 
 // called in a component
 const scroll = useScroll();
@@ -14,10 +14,10 @@ console.log(scroll);
 
 ## Type Declarations
 
-<details>
-  <summary class="italic cursor-pointer">Show Type Declarations</summary>
+::: details Show type declarations
 
 ```ts
 export declare function useScroll(): number;
 ```
-</details>
+
+:::
