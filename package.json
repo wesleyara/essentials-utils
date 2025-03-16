@@ -1,6 +1,6 @@
 {
   "name": "essentials-utils",
-  "version": "1.2.9",
+  "version": "1.2.10",
   "description": "A powerfull js/ts functions",
   "main": "./lib/index.js",
   "types": "./lib/index.d.ts",
