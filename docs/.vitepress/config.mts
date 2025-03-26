@@ -128,7 +128,8 @@ function sidebarGuide(): DefaultTheme.SidebarItem[] {
           { text: "useScroll", link: '/useScroll/' },
           { text: "useToggle", link: '/useToggle/' },
           { text: "useWidth", link: '/useWidth/' },
-          { text: "useMousePotision", link: "/useMousePosition/" },
+          { text: "useMousePosition", link: "/useMousePosition/" },
+          { text: "useStorage", link: "/useStorage/" },
         ].sort((a, b) => a.text.localeCompare(b.text))
       },
       {
@@ -136,7 +137,7 @@ function sidebarGuide(): DefaultTheme.SidebarItem[] {
         base: '/vue',
         collapsed: false,
         items: [
-          { text: "useMousePotision", link: "/useMousePosition/" },
+          { text: "useMousePosition", link: "/useMousePosition/" },
         ].sort((a, b) => a.text.localeCompare(b.text))
       }
     ]
